@@ -26,6 +26,10 @@ body {
   justify-content: center;
   gap: 3rem;
   padding: 2rem 0 !important;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 
   a {
     text-decoration: none;
