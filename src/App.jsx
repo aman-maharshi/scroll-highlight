@@ -1,10 +1,24 @@
 import React, { useState, useEffect } from 'react'
 
 const App = () => {
+  const [hasScrolled, setHasScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 40)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
+
 
   return (
     <>
-      <header className="wrapper header">
+      <header className={`wrapper header ${hasScrolled ? "scrolled" : ""}`}>
         <a href="#features">Features</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">Faq</a>
