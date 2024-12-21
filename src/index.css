@@ -30,6 +30,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+  transition: all 0.5s ease;
 
   a {
     text-decoration: none;
@@ -64,10 +65,18 @@ body {
   padding: 2rem 5rem;
 }
 
-.section.features, .section.faq {
+.hero {
+  padding-top: 100px;
+}
+
+.section.pricing {
   background-color: var(--bg-two);
 }
 
 a.link-active {
   color: var(--highlight);
+}
+
+.scrolled {
+  background-color: #040719;
 }
