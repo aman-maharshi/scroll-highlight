@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-one: #080d27;
+  --bg-two: #1b2659;
+  --highlight: #2ef2ff;
+  --text: #eaedff
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-one);
+  color: var(--text);
+  font-family: "Raleway", serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0 !important;
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    gap: 1rem;
+  }
+
+  .header a {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+
+
+
+.section-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.section {
+  min-height: 90vh;
+  padding: 2rem 5rem;
+}
+
+.section.features, .section.faq {
+  background-color: var(--bg-two);
+}
+
+a.link-active {
+  color: var(--highlight);
+}
