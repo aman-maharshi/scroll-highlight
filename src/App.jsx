@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 const App = () => {
- 
+
   return (
     <>
       <header className="wrapper header">
@@ -25,8 +25,8 @@ const App = () => {
       <section id="faq" className='section'>
         <h1 className="section-title">FAQ</h1>
       </section>
-      
-      <section id="contact" className='section'>
+
+      <section id="contact" className='section pricing'>
         <h1 className="section-title">Contact</h1>
       </section>
     </>
